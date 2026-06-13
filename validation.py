@@ -6,8 +6,9 @@ def validate_task_title(title):
     return True
     
 def validate_task_description(description):
-    if not description:
-        raise TypeError("Description can't be empty") 
+    if len(description) > 1000:
+        raise TypeError("Reduce the number of character") 
+    return True
     
 def validate_due_date(due_date):
     try:
