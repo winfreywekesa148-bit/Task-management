@@ -1,5 +1,5 @@
 # Import validation functions
-None
+from validation import validate_task_title,validate_task_description,validate_due_date
 
 # Define tasks list
 tasks = []
@@ -21,4 +21,4 @@ def view_pending_tasks(tasks=tasks):
 # Implement calculate_progress function
 def calculate_progress(tasks=tasks):
     None
-    return progress
+    return calculate_progress
