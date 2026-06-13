@@ -1,5 +1,5 @@
 # Import functions from task_manager.task_utils package
-None
+from task_utils import add_task, mark_task_as_complete,view_pending_tasks,calculate_progress
 
 # Define the main function
 def main():
@@ -13,15 +13,23 @@ def main():
         choice = input("Enter your choice (1-5): ")
 
         if choice == "1":
-            None
-        None
-        None
-        None
+             add_task()
+
+        elif choice == "2":
+            mark_task_as_complete()
+
+        elif choice == "3":
+            view_pending_tasks()
+
+        elif choice == "4":
+            calculate_progress()
+
         elif choice == "5":
-        print("Exiting the program...")
-        break
+            break
+
         else:
-        print("Invalid choice. Please try again.")
+            print("Invalid choice. Please try again")
+        
         
 if __name__ == "__main__":
     main()
