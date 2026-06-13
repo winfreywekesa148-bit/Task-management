@@ -22,9 +22,12 @@ def add_task():
     print("Task added successfully!")
     
 # Implement mark_task_as_complete function
-def mark_task_as_complete(index, tasks=tasks):
-    
-    print("Task marked as complete!")
+def mark_task_as_complete():
+    index = int(input("Enter index: "))
+
+    if 0 <= index < len(tasks):
+        tasks[index] ["completed"] = True
+        print("Task marked as complete!")
     
 # Implement view_pending_tasks function
 def view_pending_tasks(tasks=tasks):
