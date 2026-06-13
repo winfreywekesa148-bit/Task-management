@@ -6,7 +6,7 @@ def validate_task_title(title):
     return True
     
 def validate_task_description(description):
-    if len(description) > 1000:
+    if len(description) > 500:
         raise TypeError("Reduce the number of character") 
     return True
     
