@@ -23,7 +23,7 @@ def add_task():
     
 # Implement mark_task_as_complete function
 def mark_task_as_complete():
-    index = int(input("Enter index: "))
+    index = int(input("Enter index: ")) - 1
 
     if 0 <= index < len(tasks):
         tasks[index] ["completed"] = True
